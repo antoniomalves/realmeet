@@ -26,3 +26,9 @@ logging:
   level:
     org.springframework: ERROR
     org.flywaydb: ERROR
+
+#realmeet:
+#  taskExecutor:
+#    pool:
+#      coreSize: 20
+#      maxSize: 20
