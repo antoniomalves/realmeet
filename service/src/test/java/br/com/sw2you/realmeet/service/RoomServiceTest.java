@@ -2,6 +2,7 @@ package br.com.sw2you.realmeet.service;
 
 import static br.com.sw2you.realmeet.utils.MapperUtils.roomMapper;
 import static br.com.sw2you.realmeet.utils.TestConstants.DEFAULT_ROOM_ID;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.anyLong;
 import static org.mockito.Mockito.when;
 
@@ -34,9 +35,9 @@ class RoomServiceTest {
         when(roomRepository.findById(anyLong())).thenReturn(Optional.of(room));
         var dto = roomService.getRoom(DEFAULT_ROOM_ID);
 
-        Assert.assertEquals(room.getId(), dto.getId());
-        Assert.assertEquals(room.getName(), dto.getName());
-        Assert.assertEquals(room.getSeats(), dto.getSeats());
+        assertEquals(room.getId(), dto.getId());
+        assertEquals(room.getName(), dto.getName());
+        assertEquals(room.getSeats(), dto.getSeats());
     }
 
 }
