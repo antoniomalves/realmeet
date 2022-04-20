@@ -82,7 +82,7 @@ public class Room {
                 '}';
     }
 
-    public static Builder newBUilder() {
+    public static Builder newBuilder() {
         return new Builder();
     }
 
