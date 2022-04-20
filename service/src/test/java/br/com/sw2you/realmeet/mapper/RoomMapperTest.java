@@ -1,13 +1,10 @@
 package br.com.sw2you.realmeet.mapper;
 
 import static br.com.sw2you.realmeet.utils.MapperUtils.roomMapper;
-import static br.com.sw2you.realmeet.utils.TestDataCreator.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static br.com.sw2you.realmeet.utils.TestDataCreator.newRoomBuilder;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import br.com.sw2you.realmeet.api.model.RoomDTO;
-import br.com.sw2you.realmeet.domain.entity.Room;
-import br.com.sw2you.realmeet.utils.TestDataCreator;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
